@@ -1,0 +1,129 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+.link-mobile .link-txt::before,
+.link-mobile > a::after,
+.sc-vibe .vibe-img .ico-play::before,
+.sc-vibe .header-tit .ico-vibe,
+.sc-dictionary .ico-search,
+.sc-papago .ico-character,
+.sc-papago .header-tit .ico-logo,
+.sc-stock .stock-list .stock-more::after,
+.sc-stock [class*="ico-"],
+.sc-stock .group-header .btn-refresh::before,
+.sc-stock .group-header .btn-more::before,
+.sc-weather .group-header > a::before,
+.sc-login .link-login::before,
+.footer .group-link .link-all::after,
+.sc-feed .group-feed .feed-row-area .btn-next::before,
+.sc-commerce .group-issue .control-area [class*="btn-squer"]::before,
+.sc-news .set-area > button::before,
+.group-control .control-area [class*="btn-"]::before,
+.sc-news .issue-area .btn-all .ico-triangle,
+.sc-news .group-header .tag-live::before,
+.header .util-aea [class*="btn-"]::after,
+.header .group-nav .nav-item [class*="ico-"]::before,
+.header .group-nav .nav-item [class*="ico-"]::after,
+.header .group-search .btn-auto::after,
+.header .group-search .btn-keyboard::after {
+  display: block;
+  background-image: url(../img/sp-bg1.png);
+  background-repeat: no-repeat;
+  background-size: 434px;
+  content: "";
+}
+
+.sc-weather .weather-right [class*="ico-"]::before,
+.sc-weather .group-content .ico-weatherdaily::before {
+  display: block;
+  background-image: url(../img/sp-bg2.png);
+  background-size: 641px 587px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+
+
+.news-area a:hover,
+.headline-area .issue:hover,
+.headline-area .media:hover,
+.headline-area .btn-all:hover,
+.todaypick-link:hover .todaypick-txt,
+.sc-stock .stock-list .stock-item > a:hover,
+.sc-login .login-more a:hover,
+.vibe-item .vibe-tit:hover,
+.product-item > a:hover .content-img .product-txt,
+.sc-feed .group-feed .feed-item > a:hover strong,
+.footer .group-aside .service-desc:hover,
+.footer .footer-addr a:hover,
+.footer .footer-item > a:hover,
+.footer .group-link a:hover,
+.footer .banner-item > a:hover .banner-tit,
+.sc-feed .event-item > a:hover .event-tit,
+.sc-commerce .group-commerce .ad-aside:hover p,
+.sc-commerce .group-commerce .mall-item > a:hover,
+.sc-commerce .group-commerce .navershop-item > a:hover,
+.sc-commerce .group-commerce .product-txt:hover,
+.group-header .tab-item > a:hover {
+  text-decoration: underline;
+}
+
+
+
+.vibe-item .vibe-img:hover img,
+.product-item > a:hover .content-img img,
+.footer .banner-item > a:hover .content-img img,
+.sc-feed .event-item > a:hover .event-img img,
+.sc-feed .group-feed .feed-item > a:hover .content-img img,
+.sc-commerce .group-commerce .ad-aside:hover img,
+.sc-commerce .group-commerce .product-img:hover img {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+}
+
+.sc-vibe .vibe-list .vibe-tit,
+.sc-dic .dictionary-txt,
+.footer .banner-list .banner-txt,
+.sc-feed .group-feed .feed-tit,
+.sc-feed .group-feed .event-desc {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.ad-slide .slide-item .ad-txt,
+.ad-slide .slide-item .ad-tit,
+.sc-stock .stock-info .stock-name,
+.footer .banner-list .banner-tit,
+.footer .banner-list .banner-subtit,
+.sc-feed .feed-desc .ad-tit,
+.sc-feed .feed-desc .ad-cate,
+.sc-feed .feed-desc .company-tit,
+.sc-feed .group-feed .feed-item .user-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sc-commerce .group-commerce .group-navershop::before,
+.sc-commerce .group-commerce .group-mall::before,
+.sc-vibe .vibe-list .vibe-img::before,
+.content-img::after {
+  display: block;
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: inherit;
+  transform: translateZ(0);
+  perspective: 1px;
+  pointer-events: none;
+  content: "";
+}
